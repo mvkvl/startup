@@ -89,7 +89,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx # dark
 export PS1="$C_LIGHTGREEN\u$C_DEFAULT@$C_LIGHTYELLOW\h$C_DEFAULT:\w\$$C_DEFAULT "
 export TERM="xterm-256color"
 
-if [ "$PS1" ]; then
+#if [ "$PS1" ]; then
 #
 #    if [ -x /usr/bin/tput ]; then
 #      if [ "x`tput kbs`" != "x" ]; then # We can't do this with "dumb" terminal
@@ -171,7 +171,7 @@ shopt -s histappend
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+#PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 
 ## -----------------------
 ## -- 2) Set up aliases --

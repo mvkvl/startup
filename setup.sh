@@ -26,17 +26,9 @@ sudo apt-add-repository -y ppa:cassou/emacs
 sudo apt-get update
 sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
 
-# git pull and install dotfiles as well
-cd $HOME
-if [ -d ./startup/ ]; then
-    mv startup startup.old
-fi
-if [ -d .emacs.d/ ]; then
-    mv .emacs.d .emacs.d~
-fi
-git clone https://github.com/mvkvl/startup.git
 ln -sb startup/.screenrc .
 ln -sb startup/.bash_profile .
 ln -sb startup/.bashrc .
 ln -sb startup/.bashrc_custom .
+ln -sb startup/.bash_colors .
 ln -sf startup/.emacs.d .
