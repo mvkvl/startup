@@ -89,7 +89,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx # dark
 export PS1="$C_LIGHTGREEN\u$C_DEFAULT@$C_LIGHTYELLOW\h$C_DEFAULT:\w\$$C_DEFAULT "
 export TERM="xterm-256color"
 
-#if [ "$PS1" ]; then
+if [ "$PS1" ]; then
 #
 #    if [ -x /usr/bin/tput ]; then
 #      if [ "x`tput kbs`" != "x" ]; then # We can't do this with "dumb" terminal
@@ -148,22 +148,22 @@ export TERM="xterm-256color"
     # define a bash function which escapes the string before writing it; if you
     # have a fix for that which doesn't slow the command down, please submit
     # a patch or pull request.
-    PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo -e $$\\t$USER\\t$HOSTNAME\\tscreen $WINDOW\\t`date +%D%t%T%t%Y%t%s`\\t$PWD"$(history 1)" >> ~/.bash_eternal_history'
-
-    # Turn on checkwinsize
-    shopt -s checkwinsize
-
-    #Prompt edited from default
-    [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u \w]\\$ "
-
-    if [ "x$SHLVL" != "x1" ]; then # We're not a login shell
-        for i in /etc/profile.d/*.sh; do
-	    if [ -r "$i" ]; then
-	        . $i
-	    fi
-	done
-    fi
-fi
+#    PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo -e $$\\t$USER\\t$HOSTNAME\\tscreen $WINDOW\\t`date +%D%t%T%t%Y%t%s`\\t$PWD"$(history 1)" >> ~/.bash_eternal_history'
+#
+#    # Turn on checkwinsize
+#    shopt -s checkwinsize
+#
+#    #Prompt edited from default
+#    [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u \w]\\$ "
+#
+#    if [ "x$SHLVL" != "x1" ]; then # We're not a login shell
+#        for i in /etc/profile.d/*.sh; do
+#	    if [ -r "$i" ]; then
+#	        . $i
+#	    fi
+#	done
+#    fi
+#fi
 
 # Append to history
 # See: http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
