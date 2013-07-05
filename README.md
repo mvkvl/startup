@@ -10,7 +10,7 @@ startup.git
 
 To set everything up just run
 ```sh
-curl http://set.slink.s3.amazonaws.com/startup.sh | bash
+curl https://raw.github.com/mvkvl/startup/master/bootstrap.sh | bash
 ```
 
 Based on http://github.com/startup-class/setup and http://github.com/startup-class/dotfiles
