@@ -38,7 +38,12 @@ ln -sf startup/.emacs.d .
 sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | bash
 
 # create ssh config file
-echo "Host heroku.com"             > ~/.ssh/config
-echo "HostName heroku.com"        >> ~/.ssh/config
-echo "IdentityFile ~/.ssh/rsa_id" >> ~/.ssh/config
-echo "IdentitiesOnly yes"         >> ~/.ssh/config
+echo "Host heroku.com"              > ~/.ssh/config
+echo " HostName heroku.com"        >> ~/.ssh/config
+echo " IdentityFile ~/.ssh/rsa_id" >> ~/.ssh/config
+echo " IdentitiesOnly yes"         >> ~/.ssh/config
+echo ""                            >> ~/.ssh/config
+echo "Host github.com"             >> ~/.ssh/config
+echo " HostName github.com"        >> ~/.ssh/config
+echo " IdentityFile ~/.ssh/rsa_id" >> ~/.ssh/config
+echo " IdentitiesOnly yes"         >> ~/.ssh/config
