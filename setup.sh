@@ -32,3 +32,5 @@ ln -sb startup/.bashrc .
 ln -sb startup/.bashrc_custom .
 ln -sb startup/.bash_colors .
 ln -sf startup/.emacs.d .
+
+sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | bash
