@@ -47,3 +47,7 @@ echo "Host github.com"             >> ~/.ssh/config
 echo " HostName github.com"        >> ~/.ssh/config
 echo " IdentityFile ~/.ssh/rsa_id" >> ~/.ssh/config
 echo " IdentitiesOnly yes"         >> ~/.ssh/config
+
+sudo apt-get -y install htop mc
+
+
